@@ -1,0 +1,7 @@
+packages:
+  # All your libraries will live here
+  - 'packages/*'
+  # All your websites (like the docs) will live here
+  - 'apps/*'
+allowBuilds:
+  esbuild: true
