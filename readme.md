@@ -1,10 +1,10 @@
-# 🚀 [Your Library Name] UI
+# 🚀 OKLUMA UI
 
-![npm version](https://img.shields.io/npm/v/[your-library-name])
-![license](https://img.shields.io/npm/l/[your-library-name])
+![npm version](https://img.shields.io/npm/v/okluma-ui)
+![license](https://img.shields.io/npm/l/okluma-ui)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
 
-**[Your Library Name] UI** is a modern, high-performance **Tailwind CSS plugin** and UI component library. It bridges the gap between simple utility classes and enterprise-grade design systems. 
+**OKLUMA UI** is a modern, high-performance **Tailwind CSS plugin** and UI component library. It bridges the gap between simple utility classes and enterprise-grade design systems. 
 
 Designed for developers who want the beautiful, customizable aesthetics of **Shadcn**, the structural robustness of **Material UI**, and the effortless, plug-and-play developer experience of **DaisyUI**. 
 
