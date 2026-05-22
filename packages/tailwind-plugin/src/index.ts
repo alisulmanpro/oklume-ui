@@ -1,5 +1,4 @@
-import plugin, { type PluginCreator } from "tailwindcss/plugin";
-
+import plugin, { type PluginCreator, type PluginAPI } from "tailwindcss/plugin";
 
 const tailwind_plugin: PluginCreator = ({ addUtilities, addComponents, theme }: PluginAPI) => {
     // 1. Add custom utility classes
@@ -13,6 +12,7 @@ const tailwind_plugin: PluginCreator = ({ addUtilities, addComponents, theme }: 
     addComponents({
         '.btn-custom': {
             backgroundColor: theme('colors.blue.500'),
+            cursor: 'pointer',
             padding: '.5rem 1rem',
             borderRadius: theme('borderRadius.lg'),
             '&:hover': {
@@ -22,8 +22,7 @@ const tailwind_plugin: PluginCreator = ({ addUtilities, addComponents, theme }: 
     });
 };
 
-
-export default plugin(tailwind_plugin, {
+const tailwindPlugin = plugin(tailwind_plugin, {
     theme: {
         extend: {
             colors: {
@@ -32,3 +31,6 @@ export default plugin(tailwind_plugin, {
         }
     }
 });
+
+// Use ES Module export. tsup will handle the rest!
+export default tailwindPlugin;

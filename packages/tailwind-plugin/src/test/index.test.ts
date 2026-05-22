@@ -33,6 +33,7 @@ describe("Tailwind Plugin", () => {
         expect(addComponents).toHaveBeenCalledWith({
             '.btn-custom': {
                 backgroundColor: '#3b82f6', // Evaluated from theme('colors.blue.500')
+                cursor: 'pointer',
                 padding: '.5rem 1rem',
                 borderRadius: '0.5rem',     // Evaluated from theme('borderRadius.lg')
                 '&:hover': {
